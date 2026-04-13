@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora | Transforme sua presença digital</title>
+    <meta
+      name="description"
+      content="A Nexora é a agência que une estratégia, design e tecnologia para fazer seu negócio crescer online."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <a href="#" class="logo"> <span class="logo__dot"></span>Nexora </a>
+        <a href="tel:+551140028922" class="navbar__phone">(11) 4002-8922</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="#sobre">Quem Somos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato" class="btn btn--accent">Fale Conosco</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg-grid"></div>
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__content fade-up">
+          <span class="hero__eyebrow">Agência de Marketing Digital</span>
+          <h1 class="hero__headline">
+            Aqui sua marca<br />
+            <em>decola</em> de verdade.
+          </h1>
+          <p class="hero__sub">
+            Estratégia, design e tecnologia reunidos para transformar seu
+            negócio em uma presença digital que gera resultados reais — todos os
+            dias.
+          </p>
+        </div>
+
+        <!-- FORMULÁRIO -->
+        <div class="form-card fade-up fade-up--delay" id="contato">
+          <h2 class="form-card__title">Chamada para ação</h2>
+          <form id="leadForm" action="processa.php" method="post">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome completo"
+                required
+              />
+              <span class="form-error" id="err-nome"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                required
+              />
+              <span class="form-error" id="err-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefone">DDD + Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(11) 99999-9999"
+                required
+              />
+              <span class="form-error" id="err-telefone"></span>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Como podemos te ajudar?</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="3"
+                placeholder="Conte um pouco sobre o seu projeto..."
+                required
+              ></textarea>
+              <p><span id="caracter">0</span>/1500</p>
+              <span class="form-error" id="err-mensagem"></span>
+            </div>
+            <button
+              type="submit"
+              class="btn btn--accent btn--full"
+              id="submitBtn"
+            >
+              <span class="btn__text">Falar com especialista</span>
+
+              <span class="btn__loader" aria-hidden="true"></span>
+            </button>
+            <p class="form-card__privacy">
+              🔒 Seus dados estão seguros. Sem spam.
+            </p>
+          </form>
+          <div class="form-success" id="formSuccess" hidden>
+            <div class="form-success__icon">✓</div>
+            <h3>Mensagem enviada!</h3>
+            <p>
+              Nossa equipe entrará em contato em até 24h. Fique de olho no seu
+              e-mail!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- FORMULÁRIO fim -->
+
+      <div class="hero__scroll">
+        <span>role para baixo</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre" id="sobre">
+      <div class="container sobre__inner">
+        <div class="sobre__media fade-left">
+          <div class="sobre__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80"
+              alt="Equipe Nexora trabalhando"
+              loading="lazy"
+            />
+            <div class="sobre__badge">
+              <h1>+200</h1>
+              <span>projetos entregues</span>
+            </div>
+          </div>
+        </div>
+        <div class="sobre__text fade-right">
+          <span class="section-eyebrow">Quem Somos</span>
+          <h2 class="section-title">
+            Uma agência movida por resultados, não por achismos.
+          </h2>
+          <p>
+            A Nexora nasceu da união entre profissionais apaixonados por
+            tecnologia e marketing. Não fazemos sites bonitos por fazer — cada
+            pixel, cada linha de código e cada campanha têm um objetivo claro:
+            <strong>fazer você vender mais.</strong>
+          </p>
+          <p>
+            Com sede em São Paulo, atendemos empresas de todo o Brasil que
+            buscam uma parceira honesta, transparente e comprometida com
+            crescimento de longo prazo.
+          </p>
+          <div class="sobre__stats">
+            <div class="stat">
+              <strong>8+</strong><span>anos de mercado</span>
+            </div>
+            <div class="stat">
+              <strong>98%</strong><span>clientes satisfeitos</span>
+            </div>
+            <div class="stat">
+              <strong>3x</strong><span>ROI médio entregue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos" id="servicos">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Com este serviço você:</span>
+          <h2 class="section-title">
+            Tudo que seu negócio precisa para crescer online
+          </h2>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card fade-up">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M12 20h9" />
+                <path
+                  d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"
+                />
+              </svg>
+            </div>
+            <h3>Identidade Visual</h3>
+            <p>
+              Criamos marcas que ficam na mente do seu cliente. Logo, paleta,
+              tipografia e muito mais — tudo alinhado ao DNA do seu negócio.
+            </p>
+          </div>
+
+          <div class="card fade-up" style="--delay: 0.1s">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+              </svg>
+            </div>
+            <h3>Sites & Landing Pages</h3>
+            <p>
+              Desenvolvemos sites rápidos, responsivos e focados em conversão.
+              Seu cliente vai encontrar, vai entrar e vai comprar.
+            </p>
+          </div>
+
+          <div class="card fade-up" style="--delay: 0.2s">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M18 20V10M12 20V4M6 20v-6" />
+              </svg>
+            </div>
+            <h3>Tráfego Pago</h3>
+            <p>
+              Gerenciamos suas campanhas no Google e Meta Ads para atrair os
+              clientes certos, na hora certa, com o menor custo possível.
+            </p>
+          </div>
+
+          <div class="card fade-up" style="--delay: 0.3s">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path
+                  d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20"
+                />
+              </svg>
+            </div>
+            <h3>SEO & Conteúdo</h3>
+            <p>
+              Posicionamos sua empresa no topo do Google de forma orgânica.
+              Visibilidade real, que dura e que não depende só de anúncios.
+            </p>
+          </div>
+
+          <div class="card fade-up" style="--delay: 0.4s">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+              </svg>
+            </div>
+            <h3>Gestão de Redes Sociais</h3>
+            <p>
+              Produzimos conteúdo estratégico, gerenciamos o relacionamento com
+              sua audiência e fazemos sua marca ser relevante onde seu cliente
+              está.
+            </p>
+          </div>
+
+          <div class="card fade-up" style="--delay: 0.5s">
+            <div class="card__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <h3>Análise & Relatórios</h3>
+            <p>
+              Dados claros, sem enrolação. Você acompanha cada resultado em
+              tempo real e entende exatamente o que está funcionando.
+            </p>
+          </div>
+        </div>
+
+        <div class="servicos__cta fade-up">
+          <a href="#contato" class="btn btn--accent btn--lg"
+            >Quero começar agora</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Dúvidas</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+        </div>
+
+        <div class="faq__list fade-up">
+          <details class="faq__item">
+            <summary>
+              Quando vou começar a ver resultados das campanhas?
+            </summary>
+            <div class="faq__body">
+              <p>
+                Para campanhas de tráfego pago, os primeiros resultados aparecem
+                em 48–72h. Para SEO, o crescimento orgânico robusto costuma se
+                consolidar entre 3 e 6 meses.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Vocês atendem empresas de qualquer segmento?</summary>
+            <div class="faq__body">
+              <p>
+                Sim! Já trabalhamos com e-commerce, saúde, educação, advocacia,
+                beleza, tecnologia e muito mais.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Preciso ter um site para contratar os serviços?</summary>
+            <div class="faq__body">
+              <p>
+                Não necessariamente. Podemos criar do zero ou otimizar o que
+                você já tem.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Qual é o investimento mínimo para começar?</summary>
+            <div class="faq__body">
+              <p>
+                Cada projeto é orçado de forma personalizada. Temos planos
+                acessíveis para pequenas empresas e soluções completas para
+                médias e grandes.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Vou ter acesso às métricas e relatórios?</summary>
+            <div class="faq__body">
+              <p>
+                Sempre. Você recebe relatórios mensais detalhados e acesso a um
+                painel de acompanhamento em tempo real.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="cta-final">
+      <div class="cta-final__bg"></div>
+      <div class="container cta-final__inner fade-up">
+        <div class="cta-final__text">
+          <h2>Faça uma<br /><em>chamada final</em></h2>
+          <p>
+            Esse é o momento de dar o próximo passo. Chegue até aqui e não fique
+            na dúvida — aproveite a consultoria gratuita e descubra como a
+            Nexora pode transformar seu negócio.
+          </p>
+        </div>
+        <div class="cta-final__box">
+          <p>Converse com nossa equipe agora. Sem compromisso.</p>
+          <a href="#contato" class="btn btn--light btn--lg"
+            >Chamada para ação</a
+          >
+          <small
+            >Sua experiência com nossa equipe é conduzida com todo cuidado.
+            🙌</small
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="logo"><span class="logo__dot"></span>Nexora</div>
+        <p>© 2025 Nexora Digital. Todos os direitos reservados.</p>
+        <div class="footer__links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
