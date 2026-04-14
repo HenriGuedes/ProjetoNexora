@@ -138,6 +138,5 @@ Banco de dados preparado para expansão
 👨‍💻 Autor
 
 Desenvolvido por Henrique Guedes
-
-GitHub: https://github.com/HenriGuedes
-LinkedIn: https://www.linkedin.com/in/henrique-guedes-silv/
+- GitHub: [HenriqueGuedes](https://github.com/HenriGuedes)  
+- LinkedIn: [Henrique Guedes](https://www.linkedin.com/in/henrique-guedes-silv/)  
