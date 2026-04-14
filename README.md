@@ -58,8 +58,9 @@ nexora/
 
 
 ---
-## 📁 Estrutura do Projeto
-Link do projeto rodando: https://nexoraprojetowebphp.infinityfree.me
+
+##Link do projeto rodando: https://nexoraprojetowebphp.infinityfree.me
+
 ---
 
 ## ✅ Funcionalidades
