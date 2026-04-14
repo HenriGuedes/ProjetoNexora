@@ -58,6 +58,9 @@ nexora/
 
 
 ---
+## 📁 Estrutura do Projeto
+Link do projeto rodando: https://nexoraprojetowebphp.infinityfree.me
+---
 
 ## ✅ Funcionalidades
 
@@ -84,7 +87,7 @@ O projeto utiliza uma tabela simples para armazenar os dados do formulário.
 
 ### Estrutura (`banco.sql`)
 
-```sql
+sql
 CREATE TABLE `dados` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
@@ -139,4 +142,5 @@ Banco de dados preparado para expansão
 
 Desenvolvido por Henrique Guedes
 - GitHub: [HenriqueGuedes](https://github.com/HenriGuedes)  
-- LinkedIn: [Henrique Guedes](https://www.linkedin.com/in/henrique-guedes-silv/)  
+- LinkedIn: [Henrique Guedes](https://www.linkedin.com/in/henrique-guedes-silv/)
+ 
